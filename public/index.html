@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+
+
 </head>
 <body>
     <!-- contenedor principal -->
     <div>
         <!-- barra superior -->
         <div>
-            <nav>
+            <nav class="flex flex-no-wrap items-center justify-between p-4 border-b border-gray-200">
                 <!-- logo -->
-                <div>
+                <div class="flex items-center mr-6 text-red-700">
                     <svg
                         class="h-8 w-8 mr-2"
                         width="54"
@@ -26,25 +28,25 @@
                         d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
                         />
                     </svg>
-                    <span>
+                    <span class="text-xl tracking-tight">
                         CSJ de Pasco
                     </span>
                 </div>
 
                 <!-- opciones de la barra superior -->
-                <div>
-                    <ul>
-                        <li>
-                            opción 1
+                <div class="flex block flex-grow items-center w-auto">
+                    <ul class="flex text-sm text-gray-500 font-semibold">
+                        <li class="px-2 py-1 hover:bg-gray-100">
+                            Proyectos
                         </li>
-                        <li>
-                            opción 2
+                        <li class="px-2 py-1 hover:bg-gray-100">
+                            Equipo
                         </li>
-                        <li>
-                            opción 3
+                        <li class="px-2 py-1 hover:bg-gray-100">
+                            Tecnología
                         </li>
-                        <li>
-                            opción 4
+                        <li class="px-2 py-1 hover:bg-gray-100">
+                            Contactos
                         </li>
                     </ul>
                 </div>
@@ -69,5 +71,52 @@
         <!-- barra lateral izquierda -->
         <!-- principal -->
     </div>
+
+    <div class="flex h-full w-full flex-no-shrink">
+        <div>
+            <nav class="bg-gray-white flex flex-col items-center border-r border-gray-100">
+                <ul class="mt-3">
+                    <li class="px-3 py-1 text-sm font-semibold hover:bg-gray-100 text-gray-500">
+                        Registros
+                    </li>
+                    <li class="px-3 py-1 text-sm font-semibold hover:bg-gray-100 text-gray-500">
+                        Asistencias
+                    </li>
+                    <li class="px-3 py-1 text-sm font-semibold hover:bg-gray-100 text-gray-500">
+                        Licencias
+                    </li>
+                    <li class="px-3 py-1 text-sm font-semibold hover:bg-gray-100 text-gray-500">
+                        Reportes
+                    </li>
+                    <li class="px-3 py-1 text-sm font-semibold hover:bg-gray-100 text-gray-500">
+                        Plazas
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="w-full">
+            <nav class="border-b flex text-gray-600 text-sm items-center">
+                <div class="border my-1 px-3 py-2">
+                    Buscar
+                    <input type="text" class="border">
+                </div>
+
+                <div class="text-xs rounded-sm border-r my-1 px-5 py-2 text-center">
+                    Pág. 1 de 100
+                </div>
+
+                <div class="ml-3 text-xs rounded-sm border my-1 px-3 py-2 text-center">
+                    <button class="border border-gray-200 px-1 rounded hover:bg-gray-100 ">
+                        <
+                    </button>
+                    <button class="border border-gray-200 px-1 rounded hover:bg-gray-100">
+                        >
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
 </body>
 </html>
