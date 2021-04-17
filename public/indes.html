@@ -113,76 +113,104 @@
 
         <!-- contenido -->
         <div class="px-6 py-4 w-full bg-white">
+            <!-- contenido encabezado -->
             <h1 class=" font-semibold">
                 Listado personal
             </h1>
 
             <div class="border-t border-b-2 py-3">
                 <nav class="flex justify-between">
-                    <div class="relative border border-gray-200 flex items-center bg-white p-1 rounded">
-                        <svg 
-                            class="h-5 w-5 absolute left-0 ml-2"
-                            width="20" 
-                            height="20" 
-                            viewBox="0 0 20 20" 
-                            fill="none" 
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z" fill="#4A5568"/>
-                        </svg>
-                            
-                        <input type="text" placeholder="Buscar" class="ml-7 bg-white focus:outline-none text-sm">
-                    </div>
+                    <!-- botón agregar -->
+                    <button class="flex items-center px-2 shadow rounded bg-green-500 hover:bg-green-600 text-white text-sm focus:outline-none">
+                        <div>
+                            <svg 
+                                class="fill-current mr-1"
+                                width="20" 
+                                height="20" 
+                                viewBox="0 0 20 20" 
+                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
 
-                    <div class="">
-                        <div class="flex items-center text-sm self-center">
-                            <div>
-                                <button class="self-center bg-gray-100 border -mr-1 rounded rounded-r-none hover:bg-gray-200 focus:outline-none p-1">
-                                    <svg class="h-5 w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L9.29289 10.7071C8.90237 10.3166 8.90237 9.68342 9.29289 9.29289L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L11.4142 10L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071ZM9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289L8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289C10.0976 4.68342 10.0976 5.31658 9.70711 5.70711L5.41421 10L9.70711 14.2929C10.0976 14.6834 10.0976 15.3166 9.70711 15.7071Z" fill="#374151"/>
-                                    </svg>                                    
-                                </button>     
-                            </div>
+                                <path d="M8 9C9.65685 9 11 7.65685 11 6C11 4.34315 9.65685 3 8 3C6.34315 3 5 4.34315 5 6C5 7.65685 6.34315 9 8 9Z" 
+                                    fill=""/>
+                                <path d="M8 11C11.3137 11 14 13.6863 14 17H2C2 13.6863 4.68629 11 8 11Z" 
+                                    fill=""/>
+                                <path d="M16 7C16 6.44772 15.5523 6 15 6C14.4477 6 14 6.44772 14 7V8H13C12.4477 8 12 8.44771 12 9C12 9.55228 12.4477 10 13 10H14V11C14 11.5523 14.4477 12 15 12C15.5523 12 16 11.5523 16 11V10H17C17.5523 10 18 9.55228 18 9C18 8.44772 17.5523 8 17 8H16V7Z" 
+                                    fill=""/>
+                            </svg>
+                        </div>
+                        Nuevo personal
+                    </button>
 
-                            <div>
-                                <button class="bg-gray-100 border -mr-1 hover:bg-gray-200 focus:outline-none p-1">
-                                    <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 5.29289C13.0976 5.68342 13.0976 6.31658 12.7071 6.70711L9.41421 10L12.7071 13.2929C13.0976 13.6834 13.0976 14.3166 12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289L11.2929 5.29289C11.6834 4.90237 12.3166 4.90237 12.7071 5.29289Z" fill="#4A5568"/>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <div class="flex border border-gray-200 bg-gray-100 px-2 py-1 text-xs items-center">
-                                <span>
-                                    Pág. 
-                                </span>                                
-                                <div class="px-1">
-                                    <input type="text" class="border border-gray-200 h-5 w-8 bg-white focus:outline-none" value="1000">
-                                </div>
-                                <span>
-                                    de 100
-                                </span>
-                            </div>
-
-                            <div>
-                                <button class="bg-gray-100 border -ml-1 hover:bg-gray-200 focus:outline-none p-1">
-                                    <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 14.7071C6.90237 14.3166 6.90237 13.6834 7.29289 13.2929L10.5858 10L7.29289 6.70711C6.90237 6.31658 6.90237 5.68342 7.29289 5.29289C7.68342 4.90237 8.31658 4.90237 8.70711 5.29289L12.7071 9.29289C13.0976 9.68342 13.0976 10.3166 12.7071 10.7071L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071Z" fill="#4A5568"/>
-                                    </svg>
-                                </button>  
-                            </div>
-         
-                            <div>
-                                <button class="bg-gray-100 border -ml-1 rounded rounded-l-none hover:bg-gray-200 focus:outline-none p-1">
-                                    <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 15.7071C9.90237 15.3166 9.90237 14.6834 10.2929 14.2929L14.5858 10L10.2929 5.70711C9.90237 5.31658 9.90237 4.68342 10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289L16.7071 9.29289C17.0976 9.68342 17.0976 10.3166 16.7071 10.7071L11.7071 15.7071C11.3166 16.0976 10.6834 16.0976 10.2929 15.7071Z" fill="#374151"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L8.58579 10L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L10.7071 9.29289C11.0976 9.68342 11.0976 10.3166 10.7071 10.7071L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071Z" fill="#374151"/>
-                                    </svg>                                    
-                                </button>   
-                            </div>                                              
+                    <div class="flex">
+                        <!-- buscador -->
+                        <div class="relative border border-gray-200 flex items-center bg-white p-1 rounded mr-5">
+                            <svg 
+                                class="h-5 w-5 absolute left-0 ml-2"
+                                width="20" 
+                                height="20" 
+                                viewBox="0 0 20 20" 
+                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z" fill="#4A5568"/>
+                            </svg>
+                                
+                            <input type="text" placeholder="Buscar" class="ml-7 bg-white focus:outline-none text-sm">
                         </div>
 
+                        <!-- paginación -->
+                        <div class="">
+                            <div class="flex items-center text-sm self-center">
+                                <div>
+                                    <button class="self-center bg-gray-100 border -mr-1 rounded rounded-r-none hover:bg-gray-200 focus:outline-none p-1">
+                                        <svg class="h-5 w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L9.29289 10.7071C8.90237 10.3166 8.90237 9.68342 9.29289 9.29289L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L11.4142 10L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071ZM9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289L8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289C10.0976 4.68342 10.0976 5.31658 9.70711 5.70711L5.41421 10L9.70711 14.2929C10.0976 14.6834 10.0976 15.3166 9.70711 15.7071Z" fill="#374151"/>
+                                        </svg>                                    
+                                    </button>     
+                                </div>
 
-                    </div>
+                                <div>
+                                    <button class="bg-gray-100 border -mr-1 hover:bg-gray-200 focus:outline-none p-1">
+                                        <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 5.29289C13.0976 5.68342 13.0976 6.31658 12.7071 6.70711L9.41421 10L12.7071 13.2929C13.0976 13.6834 13.0976 14.3166 12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289L11.2929 5.29289C11.6834 4.90237 12.3166 4.90237 12.7071 5.29289Z" fill="#4A5568"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="flex border border-gray-200 bg-gray-100 px-2 py-1 text-xs items-center">
+                                    <span>
+                                        Pág. 
+                                    </span>                                
+                                    <div class="px-1">
+                                        <input type="text" class="border border-gray-200 h-5 w-8 bg-white focus:outline-none" value="1000">
+                                    </div>
+                                    <span>
+                                        de 100
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <button class="bg-gray-100 border -ml-1 hover:bg-gray-200 focus:outline-none p-1">
+                                        <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 14.7071C6.90237 14.3166 6.90237 13.6834 7.29289 13.2929L10.5858 10L7.29289 6.70711C6.90237 6.31658 6.90237 5.68342 7.29289 5.29289C7.68342 4.90237 8.31658 4.90237 8.70711 5.29289L12.7071 9.29289C13.0976 9.68342 13.0976 10.3166 12.7071 10.7071L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071Z" fill="#4A5568"/>
+                                        </svg>
+                                    </button>  
+                                </div>
+            
+                                <div>
+                                    <button class="bg-gray-100 border -ml-1 rounded rounded-l-none hover:bg-gray-200 focus:outline-none p-1">
+                                        <svg class="h-5 w-5" width="20" height="20" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 15.7071C9.90237 15.3166 9.90237 14.6834 10.2929 14.2929L14.5858 10L10.2929 5.70711C9.90237 5.31658 9.90237 4.68342 10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289L16.7071 9.29289C17.0976 9.68342 17.0976 10.3166 16.7071 10.7071L11.7071 15.7071C11.3166 16.0976 10.6834 16.0976 10.2929 15.7071Z" fill="#374151"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L8.58579 10L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L10.7071 9.29289C11.0976 9.68342 11.0976 10.3166 10.7071 10.7071L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071Z" fill="#374151"/>
+                                        </svg>                                    
+                                    </button>   
+                                </div>                                              
+                            </div>
+                        </div>                        
+                    </div>                    
+
+
+
                 </nav>
             </div>
 
